@@ -43,6 +43,8 @@ jobs:
 
       - name: Checkout repository
         uses: actions/checkout@v5
+        with:
+          lfs: true # 确保开启 LFS 真正文件的下载
 
       - name: Set up Python 3.12
         uses: actions/setup-python@v6
